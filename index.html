@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PokéStarter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/carrousel.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+	</style>
+</head>
+<body>
+<!-- Navbar -->	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+  	<img src="image/pokeIcon.png" id="iconLogo" onclick="sound('cri/openingLogo')">
+    <a class="navbar-brand" href="#" id="siteName">Poké Starter</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active navLinks" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          		<a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Liste des Cartes
+          		</a>
+          		<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					            <li><a class="dropdown-item" href="bulbizarre.html">Bulbizarre</a></li>
+					            <li><a class="dropdown-item" href="carapuce.html">Carapuce</a></li>
+					            <li><a class="dropdown-item" href="salameche.html">Salamèche</a></li>
+          		</ul>
+        </li>
+         <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Questionnaires
+		          </a>
+			        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					            <li><a class="dropdown-item" href="questionnaire1.html" target="blank">1ère Gen</a></li>
+					            <li><a class="dropdown-item" href="#" onclick="sound('cri/criAligatueur')">2nd Gen</a></li>
+			        </ul>
+        </li>
+        <li class="nav-item navLinks">
+          <a class="nav-link" href="#" onclick="sound('cri/criFlorizarre')">Futures</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--Carrousel-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide indexCarrousel" data-bs-ride="carousel">
+
+				<div class="carousel-indicators">
+					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				</div>
+
+		 		<div class="carousel-inner">
+
+						    <div class="carousel-item active" data-bs-interval="10000">
+						      		<img src="image/coverVersion6.jpg" id="firstCarouselImg" class="d-block w-100" alt="pokemon" title="Pokémon 1ère Gen">
+								    <div class="carousel-caption d-none d-md-block carouselText">
+								        <h5>Des Pokémons surveillent les sections du site non disponibles, sauriez vous les reconnaitrent ?</h5>
+								    </div>
+						    </div>
+
+						    <div class="carousel-item" data-bs-interval="2000">
+						      		<img src="image/pokevolution.jpg" class="d-block w-100" alt="pokemon" title="Pokémon 2nd Gen">
+								    <div class="carousel-caption d-none d-md-block carouselText">
+								        <h5>Les 25 Ans de Pokémon<h5>
+                                        <p id="countDown"></p>
+								    </div>
+						    </div>
+
+		 		</div><!-- End of .carousel-inner -->
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+				</button>
+
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+				</button>
+
+</div><!-- End of #carouselExampleDark -->
+
+
+<!--Cards-->
+<div class="container">
+<div class="row row-cols-1 row-cols-md-3 g-3" id="cardList">
+
+    
+            <div class="card" id="contourCard">
+
+                  <div class="card-content card-front" style="width: 18rem;">
+                           <img src="image/bulbizarre.png" class="card-img-top" alt="bulbizarre" title="Bulbizarre">
+                                    <div class="card-body">
+                                             <h5 class="card-title">Bulbizarre</h5>
+                                             <p class="card-text">Bulbizarre est un petit quadrupède vert avec une tête large. Il a des taches foncées sur le corps faisant penser à un batracien. Il porte un bulbe sur son dos qui lui sert d'organe de stockage, il est dit qu'en période de sécheresse, il pourrais survivre plusieurs jours sans manger grâce à l’énergie qui y est accumulée. Son bulbe grandit en permanence en absorbant les rayons du soleil.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Type : <img src="image/plantetype.png"> - <img src="image/poisontype.png"></li>
+                                          <li class="list-group-item">Talent : Engrais, Chlorophylle</li>
+                                          <li class="list-group-item">Miniature : <img src="image/bulbAnim.gif"></li>
+                                    </ul>
+                                    <div class="card-body">
+                                          <br>
+                                    </div>
+                  </div><!-- end of .card-front -->
+
+                  <div class="card-content card-back" style="width:18rem;">
+                                          <img src="image/versoCard.jpg" class="card-img-top" alt="salameche" title="Salamèche">
+                                              <div class="card-body" id="compenseLongueur">
+                                                <a href="bulbizarre.html" target="blank" class="card-link">+ Details</a>
+                                              </div>
+                                             <div class="card-img-bottom">
+                                                   <p class="brand_name"><img src="image\pokeIcon.png"> PokéStarter &copy;</p>
+                                             </div> 
+                  </div><!-- end of .card-back -->
+                  
+          </div><!-- end of 1st .card-->
+    
+
+
+  
+         <div class="card" id="contourCard">
+
+            <div class="card-content card-front" style="width: 18rem;">
+                     <img src="image/carapuce.png" class="card-img-top" alt="carapuce" title="Carapuce">
+                              <div class="card-body">
+                                       <h5 class="card-title">Carapuce</h5>
+                                       <p class="card-text">Carapuce est une petite tortue bipède de couleur bleue. Il possède une carapace majoritairement brune. Il a une queue avec un motif de spirale à son extrémité. Il possède quatre pattes avec chacune trois doigts.
+                                       Sa carapace durcit avec le temps et lui sert à se protéger pour lancer ensuite des jets d'eau ou d'écume.</p>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                       <li class="list-group-item">Type: <img src="image/watertype.png"></li>
+                                       <li class="list-group-item">Talent: Torrent, Cuvette</li>
+                                       <li class="list-group-item">Miniature: <img src="image/caraAnim.gif"></li>
+                              </ul>
+                              <div class="card-body">
+                                       <br>
+                              </div>
+                                    
+            </div><!-- End of .card-front -->
+
+            <div class="card-content card-back" style="width:18rem;">
+                     <img src="image/versoCard.jpg" class="card-img-top" alt="salameche" title="Salamèche">
+                     <div class="card-body" id="compenseLongueur">
+                                      <a href="carapuce.html" target="blank" class="card-link">+ Details</a>        
+                     </div>
+                     <div class="card-img-bottom">
+                           <p class="brand_name"><img src="image\pokeIcon.png"> PokéStarter &copy;</p>
+                     </div> 
+            </div><!-- End of .card-back -->
+
+      </div><!-- end of 2nd .card -->
+      
+
+
+  
+         <div class="card" id="contourCard">
+
+              <div class="card-content card-front" style="width: 18rem;">
+                        <img src="image/salameche.png" class="card-img-top" alt="salameche" title="Salamèche">
+                        <div class="card-body">
+                                          <h5 class="card-title">Salamèche</h5>
+                                          <p class="card-text">Salamèche est un Pokémon bipède et reptilien avec un corps orange tandis que son ventre et la plante de ses pieds sont jaunes. Ses bras et ses jambes ont quatre doigts et trois griffes chacune. La flamme,prèsente depuis sa naissance, peut servir d'indication quant à la santé et l'humeur de Salamèche.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Type: <img src="image/firetype.png"></li>
+                                          <li class="list-group-item">Talent: Brasier, Force Soleil</li>
+                                          <li class="list-group-item">Miniature: <img src="image/salaAnim.gif"></li>
+                        </ul>
+                        <div class="card-body">
+                                          <br>
+                        </div>
+               </div><!-- End of .card-front -->
+
+               <div class="card-content card-back" style="width:18rem;">
+                        <img src="image/versoCard.jpg" class="card-img-top" alt="salameche" title="Salamèche">
+                        <div class="card-body" id="compenseLongueur">
+                                          <a href="salameche.html" target="blank" class="card-link">+ Details</a>       
+                        </div>
+                        <div class="card-img-bottom">
+                              <p class="brand_name"><img src="image\pokeIcon.png"> PokéStarter &copy;</p>
+                        </div> 
+               </div><!--End of .card-back -->
+
+  </div><!-- end of 3th .card -->
+
+
+
+</div><!--end of .row -->
+</div><!-- end of .container -->
+
+<div id="marginFuckinCards">
+<!-- News section -->
+<div class="container my-5">
+		<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+
+		      	<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+				        <h1 class="display-4 fw-bold lh-1 newsTitle">Bientot disponible</h1>
+				        <p class="lead">Le Starter 2nd Gén ! Choisir le Pokémon Starter le plus adapté au parcours des Arènes !
+				        Lequel est le plus adapté à l'offensive ? Lequel possède une défense spéciale plus élevée ?</p>
+				        <br/>
+				        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+					          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold newsBtn" onclick="sound('cri/criAligatueur')">Préviens Moi</button>
+				        </div>
+		        </div>
+		        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+		          <img class="rounded-lg-3" src="image/2ndgen.png" alt="" width="450">
+		        </div>
+
+		</div><!-- End of .row -->
+</div><!-- End of .container -->
+
+<footer>
+				<p class="brand_name"><img src="image\pokeIcon.png"> PokéStarter &copy;</p>
+</footer> 
+</div><!-- end of #marginFuckinCards -->
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/pokestarter.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
+
+</body>
+</html>

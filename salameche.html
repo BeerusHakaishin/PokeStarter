@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PokéStarter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+	</style>
+</head>
+<body>
+<!-- Navbar -->	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+  	<img src="image/pokeIcon.png" id="iconLogo" alt="PokéStarter" title="PokéStarter" onclick="sound('cri/openingLogo')">
+    <a class="navbar-brand" href="#">Poké Starter</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Liste des Cartes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="bulbizarre.html">Bulbizarre</a></li>
+            <li><a class="dropdown-item" href="carapuce.html">Carapuce</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Questionnaires
+		          </a>
+			        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					            <li><a class="dropdown-item" href="questionnaire1.html" target="blank">1ère Gen</a></li>
+					            <li><a class="dropdown-item" href="#" onclick="sound('cri/criAligatueur')">2nd Gen</a></li>
+			        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="sound('cri/criFlorizarre')">Futures</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+<!--Cards-->
+<div class="container-fluid">
+
+	<div class="container">
+
+				<div class="row" id="cardList">
+							<h2>Starter 1ère Gen</h2>			
+							
+										<div class="card mb-3" style="max-width: 540px;">
+														<div class="row g-0">
+
+																    <div class="col-md-2">
+																      		<img src="image/salameche.png" class="img-fluid rounded-start poke_profil" alt="Salamèche" title="Salamèche">
+																    </div>
+																    <div class="col-md-8">
+																		      <div class="card-body">
+																			        <h5 class="card-title">Salamèche</h5>
+																			        <p class="card-text">Salamèche est un Pokémon bipède et reptilien avec un corps orange tandis que son ventre et la plante de ses pieds sont jaunes. Ses bras et ses jambes sont courts, avec quatre doigts et trois griffes chacune. Une flamme brûle au bout de la queue de Salamèche depuis sa naissance. La flamme peut servir d'indication quant à la santé et à l'humeur de Salamèche.</p>
+																			        <ul class="list-group list-group-flush">
+																							    <li class="list-group-item">Type: <img src="image/firetype.png" alt="Type Feu" title="Type Feu"></li>
+																							    <li class="list-group-item">Talent: Brasier, Force-Soleil</li>
+																							    <li class="list-group-item">Miniature: <img src="image/salaAnim.gif" alt="Salamèche" title="Salamèche"></li>
+																							    <li class="list-group-item">Chromatique: <img src="image/chromsala.gif" alt="Salamèche Shiny" title="Salamèche Shiny"></li>
+													    								</ul>
+
+													    								<button class="btn btn-primary" id="salaBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Stats</button>
+
+																							<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+																														  <div class="offcanvas-header">
+																														  				<img src="image/salamini.png" alt="Salamèche" title="Salamèche">
+																																	    <h5 id="offcanvasRightLabel">STATS</h5>
+																																	    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+																	 														</div><!-- End of .offcanvas-header -->
+
+																											 					<div class="offcanvas-body">
+
+																																		  <div class="pv">
+																																		  <h5>PV:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">39</div>
+																																					</div>
+																																		  </div>
+																																		  <br/>
+																																		  <div class="att">
+																																		  <h5>Attaque:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 52%;" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">52</div>
+																																					</div>
+																																		  </div>
+																																		  <br/>
+																																		  <div class="def">
+																																		  <h5>Defense:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 43%;" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">43</div>
+																																					</div>
+																																		  </div>
+																																		  <br/>
+																																		  <div class="attSpe">
+																																		  <h5>Attaque Spéciale:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+																																					</div>
+																																		  </div>
+																																		  <br/>
+																																		  <div class="defSpe">
+																																		  <h5>Defense Spéciale:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+																																					</div>
+																																		  </div>
+																																		  <br/>
+																																		  <div class="vit">
+																																		  <h5>Vitesse:</h5>
+																																		  		<div class="progress">
+ 																																				 			<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65</div>
+																																					</div>
+																																		  </div>
+
+																											  				</div><!-- End of .offcanvas-body -->
+																								</div><!-- End of .offcanvas -->
+
+																			        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+																		      </div>
+																    </div>
+
+														</div> <!-- End of .row g-0 -->
+										</div> <!--End of .card mb-3 -->
+										
+										<div class="card mb-3" style="max-width: 540px;">
+														<div class="row g-0">
+
+																    <div class="col-md-12">
+																		      <div class="card-body">
+																			        <h5 class="card-title">TECHNIQUES</h5>
+																			        <p class="card-text">
+																			        	<div class="table-responsive">
+																					        	<table class="table table-sm">
+																														<thead>
+																														<h5>Trier par : </h5>
+																																		<tr>
+																																				<th scope="col"><button class="triBtnSala">Niv</button></th>
+																																				<th scope="col"><button class="triBtnSala">Nom</button></th>
+																																				<th scope="col"><button class="triBtnSala">Type</button></th>
+																																				<th scope="col"><button class="triBtnSala">Genre</button></th>
+																																				<th scope="col"><button class="triBtnSala">Puiss</button></th>
+																																				<th scope="col"><button class="triBtnSala">Préc</button></th>
+																																		</tr>
+																														</thead>
+																														<tbody>
+																																		<tr>
+																																				<th scope="row">18</th>
+																																				<td>Dracosouffle</td>
+																																				<td><img src="image/dragontype.png" width="100%" alt="Type Dragon" title="Type Dragon"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>60</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">20</th>
+																																				<td>Draco-Rage</td>
+																																				<td><img src="image/dragontype.png" width="100%" alt="Type Dragon" title="Type Dragon"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td></td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr> 
+																																				<th scope="row">4</th>
+																																				<td>Flammèche</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>40</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">17</th>
+																																				<td>Crocs Feu</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/physique.png" width="90%" alt="Genre Physique" title="Genre Physique"></td>
+																																				<td>65</td>
+																																				<td>95</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">28</th>
+																																				<td>Lance-Flammes</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>90</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">30</th>
+																																				<td>Rebondifeu</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>70</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">32</th>
+																																				<td>Danse Flamme</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>35</td>
+																																				<td>85</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">36</th>
+																																				<td>Feu d'Enfer</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/speciale.png" width="90%" alt="Genre Spé" title="Genre Spé"></td>
+																																				<td>100</td>
+																																				<td>50</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">40</th>
+																																				<td>Boutefeu</td>
+																																				<td><img src="image/firetype.png" width="100%" alt="Type Feu" title="Type Feu"></td>
+																																				<td><img src="image/physique.png" width="90%" alt="Genre Physique" title="Genre Physique"></td>
+																																				<td>120</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">1</th>
+																																				<td>Griffe</td>
+																																	      <td><img src="image/normaltype.png" width="100%" alt="Type Normal" title="Type Normal"></td>
+																																				<td><img src="image/physique.png" width="90%" alt="Genre Physique" title="Genre Physique"></td>
+																																				<td>40</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">1</th>
+																																				<td>Rugissement</td>
+																																				<td><img src="image/normaltype.png" width="100%" alt="Type Normal" title="Type Normal"></td>
+																																				<td><img src="image/statut.png" width="90%" alt="Genre Statut" title="Genre Statut"></td>
+																																				<td></td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">8</th>
+																																				<td>Brouillard</td>
+																																				<td><img src="image/normaltype.png" width="100%" alt="Type Normal" title="Type Normal"></td>
+																																				<td><img src="image/statut.png" width="90%" alt="Genre Statut" title="Genre Statut"></td>
+																																				<td>0</td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">28</th>
+																																				<td>Grimace</td>
+																																				<td><img src="image/normaltype.png" width="100%" alt="Type Normal" title="Type Normal"></td>
+																																				<td><img src="image/statut.png" width="90%" alt="Genre Statut" title="Genre Statut"></td>
+																																				<td></td>
+																																				<td>100</td>
+																																		</tr>
+																																		<tr>
+																																				<th scope="row">20</th>
+																																				<td>Tranche</td>
+																																				<td><img src="image/normaltype.png" width="100%" alt="Type Normal" title="Type Normal"></td>
+																																				<td><img src="image/physique.png" width="90%" alt="Genre Physique" title="Genre Physique"></td>
+																																				<td>70</td>
+																																				<td>100</td>
+																																		</tr>
+																															</tbody>
+																										</table>
+																										</div>
+																			        </p>
+
+																			        <!-- Start Evolution Accordion -->
+																			        						<h5>Evolutions</h5>
+																			        						<div class="accordion" id="accordionPanelsStayOpenExample">
+
+																																	<div class="accordion-item Reptincel">
+																																					<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+																																					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Reptincel</button>
+																																					</h2>
+																																			<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+																																					      <div class="accordion-body">
+																																					      		<img src="image/reptincel.png" onclick="sound('cri/criReptincel')" alt="Reptincel" title="Reptincel"><br/>
+																																					        	<strong>Première évolution </strong>en Reptincel au niveau 16.
+																																					      </div>
+																																	    </div><!-- End of #panelsStayOpen-collapseOne -->
+																													      </div><!-- End of .accordion-item Reptincel-->
+
+																															    <div class="accordion-item Dracaufeu">
+																																					      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+																																					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+																																					      Dracaufeu
+																																					      </button>
+																																					      </h2>
+																																		        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+																																							    <div class="accordion-body">
+																																							    		<img src="image/dracaufeu.png" onclick="sound('cri/criDracaufeu')" alt="Dracaufeu" title="Dracaufeu"><br/>
+																																							        <strong>Seconde évolution </strong>en Dracaufeu au niveau 36.
+																																							    </div>
+																																					  </div><!-- End of #panelsStayOpen-collapseTwo -->
+																																	</div><!-- End of .accordion-item Dracaufeu -->
+
+																							</div><!-- End of Accordion Evolution -->
+
+																			        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+																		      </div><!-- End of .card-body -->
+																    </div><!-- End of .col-md-12 -->
+
+														</div> <!-- End of 2nd .row g-0 -->
+										</div> <!--End of 2nd .card mb-3 -->
+
+				</div>	<!-- End of .row & #cardList -->
+
+	</div> <!--End of .container -->
+	
+</div><!--End of .container-fluid -->
+
+<footer>
+				<p class="brand_name"><img src="image\pokeIcon.png" alt="PokéStarter" title="PokéStarter"> PokéStarter &copy;</p>
+</footer>
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/offcanvas.js"></script>
+<script type="text/javascript" src="js/pokestarter.js"></script>
+</body>
+</html>

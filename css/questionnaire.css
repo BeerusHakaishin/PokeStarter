@@ -1,0 +1,101 @@
+/* Nav */
+
+#iconLogo{
+  padding-right: 8px;
+}
+
+#siteName{
+  font-family: "Staatliches";
+}
+
+.navLinks{
+  font-family: "Varela Round";
+}
+
+body{
+  background-image: url("../image/fondQuest.jpg");
+}
+
+/* Form */
+
+#quizList{
+  margin-top: 150px;
+}
+
+h1{
+  font-family: "Varela Round";
+}
+
+h2 {
+  margin: 5px 0;
+  font-family: "Staatliches";
+}
+
+
+.card-body{
+  background: rgb(251,251,251);
+  background: radial-gradient(circle, rgba(251,251,251,1) 5%, rgba(8,6,6,1) 53%, rgba(238,8,8,1) 100%);
+}
+
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+  /* background-image: linear-gradient(to left, #ff6e7f, #bfe9ff); */
+}
+
+
+input {
+  margin: 5px 10px;
+  
+}
+
+/* input[type="radio"]{
+  background-color: red;
+} */
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0;
+  color: white;
+  font-family: "Staatliches";
+  border: 0;
+  border-radius: 10px;
+  border-bottom: 3px solid #333;
+}
+
+#submit {
+  background: linear-gradient(to right,rgba(183, 47, 46, 1), rgba(156, 40, 39, 0.6));
+}
+
+#reset {
+  background: linear-gradient(to right, #bdc3c7 , #2c3e50);
+}
+
+#answer {
+  border: 1px dashed #ccc;
+  background: #eee;
+  padding: 10px;
+}
+
+
+/* Footer */
+
+footer{
+height:0px;
+padding-top: 20px;
+}
+
+footer p{
+  background-image: linear-gradient(rgba(183, 47, 46, 0.9), rgba(156, 40, 39, 1)),
+  url("#");
+  color: black;
+  padding-left: 15px;
+}
+
+.brand_name{
+  font-family:"Staatliches";
+}

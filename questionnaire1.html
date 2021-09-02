@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Questionnaire</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/questionnaire.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+  </style>
+</head>
+<body>
+
+<!-- Navbar --> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <img src="image/pokeIcon.png" id="iconLogo" onclick="sound('cri/openingLogo')">
+    <a class="navbar-brand" href="#" id="siteName">Poké Starter</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active navLinks" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Liste des Cartes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="bulbizarre.html">Bulbizarre</a></li>
+                      <li><a class="dropdown-item" href="carapuce.html">Carapuce</a></li>
+                      <li><a class="dropdown-item" href="salameche.html">Salamèche</a></li>
+              </ul>
+        </li>
+         <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Questionnaire
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#" onclick="sound('cri/criAligatueur')">2nd Gen</a></li>
+                    <!--  <li><a class="dropdown-item" href="salameche.html">Bonus/Astuces</a></li> -->
+              </ul>
+        </li>
+        <li class="nav-item navLinks">
+          <a class="nav-link" href="#" onclick="sound('cri/criFlorizarre')">Futures</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container" id="quizList">
+
+
+<div class="col-order-1">
+
+<div class="card text-center">
+
+      <div class="card-header">
+        <h1>Quel type de Fan Pokémon es-tu ?</h1>
+      </div>
+
+      <div class="card-body">
+            <div id="wrapper">
+<!-- Debut questionnaire -->
+<form id="quiz">
+    <!-- Question 1 -->
+    <h2>Quel est le nom du mont situé entre Argenta et Azuria ?</h2>
+    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+    <!-- The value is which answer the choice corresponds to. -->
+    <label><input type="radio" name="q1" value="r1">
+      Le Mont Sélènite
+    </label><br />
+    <label><input type="radio" name="q1" value="r2">
+      Le Mont Gypse
+    </label><br />
+    <label><input type="radio" name="q1" value="r3">
+      Le Mont Troglodyte
+    </label><br />
+    <label><input type="radio" name="q1" value="r4">
+      Le Mont Htracite
+    </label><br />
+
+    <!-- Question 2 -->
+    <h2>Quels sont les 2 Pokémon possédés par Blue lors du duel de la Tour Pokémon ?</h2>
+    <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+    <label><input type="radio" name="q2" value="r2">
+      Caninos & Soporifik
+    </label><br />
+    <label><input type="radio" name="q2" value="r1">
+      Roucoups & Kadabra
+    </label><br />
+    <label><input type="radio" name="q2" value="r3">
+      Papillusion et Marill
+    </label><br />
+    <label><input type="radio" name="q2" value="r4">
+      Zacian & Zygarde
+    </label><br />
+    
+    <!-- Question 3 -->
+    <h2>Combien de fois affronte-t-on Giovanni dans Pokémon Rouge et Bleu ?</h2>
+    <!-- Choices for the third question -->
+    <label><input type="radio" name="q3" value="r1">
+      3 fois
+    </label><br />
+    <label><input type="radio" name="q3" value="r2">
+      2 fois
+    </label><br />
+    <label><input type="radio" name="q3" value="r3">
+      1 fois
+    </label><br />
+    <label><input type="radio" name="q3" value="r4">
+      4 fois
+    </label><br />
+    
+    <!-- Question 4 -->
+    <h2>Quelles sont les 4 attaques de Mewtwo lors de sa rencontre dans la Grotte azurée ?</h2>
+    <!-- Choices for the fourth question -->
+    <label><input type="radio" name="q4" value="r2">
+      Psyko, Choc Mental, Entrave, Onde Folie
+    </label><br />
+    <label><input type="radio" name="q4" value="r3">
+      Psyko, Préscience, Hâte, Plénitude
+    </label><br />
+    <label><input type="radio" name="q4" value="r1">
+      Psyko, Météores, Bouclier, Soin
+    </label><br />
+    <label><input type="radio" name="q4" value="r4">
+      Salade, Tomate, Oignons, Chef
+    </label><br />
+
+
+    <!-- Question 5 -->
+    <h2>Comment s'appelle le champion de l'arène de Parmanie ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q5" value="r1">
+      Koga
+    </label><br />
+    <label><input type="radio" name="q5" value="r2">
+      Kago
+    </label><br />
+    <label><input type="radio" name="q5" value="r3">
+      Goka
+    </label><br />
+    <label><input type="radio" name="q5" value="r4">
+      Goku
+    </label><br />
+
+    <!-- Question 6 -->
+    <h2>Quel est le nom du Parc dans lequel on peut, entre autre, capturer Kangourex ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q6" value="r2">
+      PokéZoo
+    </label><br />
+    <label><input type="radio" name="q6" value="r1">
+      Safari
+    </label><br />
+    <label><input type="radio" name="q6" value="r3">
+      PokéReserve
+    </label><br />
+    <label><input type="radio" name="q6" value="r4">
+      Safairire
+    </label><br />
+
+    <!-- Question 7 -->
+    <h2>Quelles sont les évolutions possibles qd'Evoli dans la 1ère Gen ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q7" value="r2">
+      Mentali, Noctali, Aquali
+    </label><br />
+    <label><input type="radio" name="q7" value="r3">
+      Voltali, Noctali, Pyroli
+    </label><br />
+    <label><input type="radio" name="q7" value="r1">
+      Pyroli, Voltali, Aquali
+    </label><br />
+    <label><input type="radio" name="q7" value="r4">
+      Il n'évoli pas Evolue 
+    </label><br />
+
+    <!-- Question 8 -->
+    <h2>Quel oiseau légendaire peut-on appercevoir dans le ciel lors du 1er Episode Indigo Ligue ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q8" value="r2">
+      Elector
+    </label><br />
+    <label><input type="radio" name="q8" value="r3">
+      Airmure
+    </label><br />
+    <label><input type="radio" name="q8" value="r4">
+      Le Coq Sportif
+    </label><br />
+    <label><input type="radio" name="q8" value="r1">
+      Ho-Oh
+    </label><br />
+
+    <!-- Question 9 -->
+    <h2>Quel fossile faut-il choisir afin d'avoir un Amonita ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q9" value="r1">
+      Fossile Nautile
+    </label><br />
+    <label><input type="radio" name="q9" value="r2">
+      Fossile Nautique
+    </label><br />
+    <label><input type="radio" name="q9" value="r3">
+      Fossile Griffe
+    </label><br />
+    <label><input type="radio" name="q9" value="r4">
+      Des Faux Cils 
+    </label><br />
+
+    <!-- Question 10 -->
+    <h2>Quel Pokémon évolue en Chrysacier ?</h2>
+    <!-- Choices for the question -->
+    <label><input type="radio" name="q10" value="r2">
+      Papillusion
+    </label><br />
+    <label><input type="radio" name="q10" value="r1">
+      Chenipan
+    </label><br />
+    <label><input type="radio" name="q10" value="r3">
+      Aspicot
+    </label><br />
+    <label><input type="radio" name="q10" value="r4">
+      Mimitoss
+    </label><br />
+    
+    <button type="submit" id="submit" onclick="tabulateAnswers()">Valide tes réponses</button>
+    <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+</form>
+  
+  
+<div id="answer">Ton résultat va apparaître ici !</div>
+
+</div> <!-- end of div #wrapper -->
+
+</div> <!-- end of .card-body -->
+
+<div class="card-footer text-muted">
+    Niveau Moyen
+</div>
+
+</div> <!-- end of 1st .card -->
+
+<br> <!-- saut de ligne uste là pour la lisibilité pour le moment -->
+
+</div> <!-- end of 1st col-order -->
+
+
+
+</div><!-- End of .container -->
+
+
+<footer>
+        <p class="brand_name"><img src="image\pokeIcon.png"> PokéStarter &copy;</p>
+</footer> 
+
+<script type="text/javascript" src="js/question.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/pokestarter.js"></script>
+
+
+
+</body>
+</html>
