@@ -1,4 +1,6 @@
 # PokeStarter
+
+***FR***
 Une page qui recence  les Starters des versions Pokémon , vouée à évoluer.
 
 
@@ -10,3 +12,16 @@ Modifications à venir :
           - Autres apports/ajouts de contenus , fonctionnalités.
           <br>
           - Amélioration du design géneral.
+          <br>
+          
+***EN*** A page that lists the Starters of the Pokémon versions, destined to evolve.
+
+
+---------------------------------------------------------------------------
+Changes to come: 
+          <br>
+          - Page <em>index.html</em> media queries problems with cards, carousel and last post.
+          <br>
+          - Other content contributions/additions, features.
+          <br>
+          - General design improvements.      
