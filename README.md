@@ -25,6 +25,5 @@ Changes to come:
           <br>
           - Other content contributions/additions, features.
           <br>
-          - General design improvements.      
-          
+          - General design improvements.            
 <a href="https://beerushakaishin.github.io/PokeStarter/">HERE</a>
