@@ -13,6 +13,7 @@ Modifications à venir :
           <br>
           - Amélioration du design géneral.
           <br>
+<a href=" https://beerushakaishin.github.io/PokeStarter/">ICI<a/>
           
 ***EN*** A page that lists the Starters of the Pokémon versions, destined to evolve.
 
@@ -25,3 +26,5 @@ Changes to come:
           - Other content contributions/additions, features.
           <br>
           - General design improvements.      
+          
+<a href=" https://beerushakaishin.github.io/PokeStarter/">HERE</a>
